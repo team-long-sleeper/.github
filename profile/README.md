@@ -1,4 +1,4 @@
-![title](./images/title.png)
+![title](../images/title.png)
 
 한 해를 함께한 소중한 순간들을 기록하고, 연말에 친구·장소·태그별 통계로 회고할 수 있는 에피소드 기록 웹 앱 <br/>
 새해를 맞아 다가올 일들을 기대하면서도 지난 한 해를 곱씹어볼 수 있길 바라는 마음에서 시작했습니다. <br/>
@@ -31,8 +31,7 @@
 ![AWS_EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logoColor=white)
 ![github_actions](https://img.shields.io/badge/github_actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-<br/>
-프론트엔드는 Netlify로 배포되고 있고, 백엔드는 Docker image push → AWS EC2 서버에서 Pull로 배포되고 있습니다. 배포 과정은 Github Actions로 자동화되어 있습니다.
+
 
 <br/>
 <br/>
@@ -43,3 +42,56 @@
 - 메인 페이지의 'episodes' 탭에서는 작성된 에피소드들을 카드 형태로 볼 수 있고,
 - 'sum up' 탭에서는 에피소드들의 통계를 확인할 수 있습니다.
 - 하루에 하나의 에피소드 작성을 best practice로 보고있습니다.
+<br/>
+<br/>
+
+# architecture
+
+![architecture](../images/architecture.png)
+
+
+<br/>
+<br/>
+
+# database
+
+```mermaid
+  erDiagram
+      User ||--o{ OAuthAccount : "has"
+      User ||--o{ Contact : "owns"
+      User ||--o{ Contact : "linkedUser"
+      User ||--o{ Friendship : "user"
+      User ||--o{ Friendship : "friend"
+      User ||--o{ RefreshSession : "has"
+      User ||--o{ Episode : "owns"
+      User ||--o{ PlaceFavorite : "has"
+      User ||--o{ Tag : "owns"
+
+      Episode ||--o{ EpisodeMate : "has"
+      Contact ||--o{ EpisodeMate : "in"
+
+      Episode ||--o{ EpisodePicture : "has"
+      Episode ||--o{ EpisodeTag : "tagged"
+      Tag ||--o{ EpisodeTag : "tags"
+
+      Place ||--o{ Episode : "location"
+      Place ||--o{ PlaceFavorite : "favorited"
+```
+
+<br/>
+<br/>
+
+# screenshots 
+
+### main page
+<img src="../images/main-episodes.png" width="48%" />
+<img src="../images/main-sumup.png" width="48%" />
+
+<br/>
+
+### write page
+<img src="../images/write-page.png" width="48%" />
+<img src="../images/kakao-map.png" width="48%" />
+<img src="../images/add-friends.png" width="48%" />
+
+
