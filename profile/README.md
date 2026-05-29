@@ -81,17 +81,32 @@
 <br/>
 <br/>
 
+
 # screenshots 
 
-### main page
-<img src="../images/main-episodes.png" width="48%" />
-<img src="../images/main-sumup.png" width="48%" />
-
+### landing
+<img src="../images/login.png" width="33%"/>
 <br/>
 
+
+### main page
+<img src="../images/main-episodes.png" width="33%" /><img src="../images/main-sumup.png"  width="33%" />
+
 ### write page
-<img src="../images/write-page.png" width="48%" />
-<img src="../images/kakao-map.png" width="48%" />
-<img src="../images/add-friends.png" width="48%" />
+<img src="../images/write-page.png"  width="33%"/><img src="../images/kakao-map.png"  width="33%"/><img src="../images/add-friends.png"  width="33%"/>
+
+<br/>
+<br/>
+
+# next
+
+- 친구 그룹핑
+- 에피소드 검색 (친구, 장소, 날짜 필터링)
+
+  <img src="../images/search.png"  width="33%" /><img src="../images/search-map.png"  width="33%" /><img src="../images/search-calendar.png"  width="33%" />
+
+- 통계 모아보기 (친구, 장소, 날짜 필터링)
+  
+  <img src="../images/sumup-year.png"  width="33%" />
 
 
