@@ -85,14 +85,37 @@
 # screenshots 
 
 ### landing
+로그인 후 이용할 수 있는 서비스입니다. <br/>
+프로젝트 전반적으로 연말연시 분위기가 연상되는 컬러와 폰트를 사용했습니다.
+
 <img src="../images/login.png" width="33%"/>
+
 <br/>
 
 
 ### main page
-<img src="../images/main-episodes.png" width="33%" /><img src="../images/main-sumup.png"  width="33%" />
+
+지금까지 모은 에피소드들을 카드형태로 볼 수 있는 episodes 탭과<br/>
+에피소드들의 통계를 확인할 수 있는 sum-up 탭이 있습니다. </br></br>
+sum-up 탭에서는 지금까지 함께한 친구의 수, 방문한 장소의 수, 월 평균 에피소드 갯수와 </br>
+에피소드에 제일 많이 등장한 친구, 장소, 태그 순위를 확인할 수 있습니다.
+
+<img src="../images/main-episodes.png" width="33%" />  <img src="../images/main-sumup.png"  width="33%" />
+
+<br/>
 
 ### write page
+
+에피소드 작성 페이지입니다. <br/>
+날짜를 직접 선택하거나, 이미지에서 추출된 날짜를 선택할 수 있고 <br/>
+장소와 에피소드 제목, 설명, 태그, 사진, 함께한 친구들을 등록할 수 있습니다. <br/>
+ <br/>
+날짜, 장소, 제목, 사진 항목이 채워져야 에피소드를 추가할 수 있습니다. <br/>
+장소 검색은 카카오 맵 API를 사용하고 있습니다. <br/>
+ <br/>
+이미지는 등록 시에 리사이징+압축, 암호화되어 저장됩니다. <br/>
+친구들의 프로필 사진은 연락처에 추가할 때 강아지, 고양이 중 랜덤으로 결정됩니다.
+
 <img src="../images/write-page.png"  width="33%"/><img src="../images/kakao-map.png"  width="33%"/><img src="../images/add-friends.png"  width="33%"/>
 
 <br/>
