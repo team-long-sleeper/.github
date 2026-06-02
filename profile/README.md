@@ -4,7 +4,10 @@
 새해를 맞아 다가올 일들을 기대하면서도 지난 한 해를 곱씹어볼 수 있길 바라는 마음에서 시작했습니다. <br/>
 (그래서 happy ~~new year~~ last year closing 입니다, 추억 연말결산! 🌅)
 
-### fe tech stack
+**[frontend repository ↗︎](https://github.com/team-long-sleeper/happy-last-year-closing)**
+**[backend repository ↗︎](https://github.com/team-long-sleeper/happy-last-year-closing-backend)**
+
+### fe tech stack 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/TanStack_Query_v5-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
